@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Roboto:wght@300;500;700&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+    color:#fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+}
+
+
+
+nav {
+    padding: 20px 15px;
+}
+
+
+.logo img {
+    width:250px;
+}
+
+.nav-links  {
+    margin: 0;
+    padding:0;
+    display: flex;
+    width: 30%;
+    justify-content:space-evenly;
+    align-items: center;
+    font-weight: 600;
+}
+
+.nav-links  li  {
+    list-style: none;
+}
+
+.nav-links  li  a {
+  text-transform: uppercase;
+}
+
+.nav-links  li  a:hover {
+  color: rgb(196, 39, 39);
+  border-bottom: 2px solid  rgb(196, 39, 39);;
+  padding-bottom: 2px;
+}
+
+
+.hero {
+    background: url('banner1.jpg')   ;
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    /* position: relative; */
+    color: #fff;
+}
+
+.hero .tirelogo {
+    height: 55px;
+    width: 240px;
+}
+
+.hero .tire-img {
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.hero .overlay  {
+    position: absolute;
+    /* top: 175px; */
+    top:175px;
+    left: 0;
+    width: 100%;
+    min-height: 601px;
+    background-color: rgba(0,0,0,0.7);
+    padding-top: 100px;
+}
+
+
+.hero img {
+    width: 240px;
+}
+
+.tire-sizing img {
+    width:650px;
+}
+
+
+.about {
+   overflow: hidden;
+   overflow-y: hidden;
+}
+
+footer {
+    padding: 40px 30px;
+    min-height: 400px;
+    background-color: rgb(16, 15, 15);
+}
+
+footer i {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+footer img {
+    margin-bottom: 40px;
+}
+
+
+ .h-widget {
+    color:  rgb(196, 39, 39);
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px 20px;
+}
+
+/* UTILS */
+
+.btn-order {
+    text-transform: uppercase;
+    font-family: "Roboto","sans-serif";
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(196, 39, 39);
+    width: 200px;
+    padding: 10px 20px;
+    border: 2px yellow solid;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.card button {
+    font-family: 'Roboto', 'sans-serif';
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.card button:hover {
+ color:rgb(196, 39, 39);
+}
+
+.btn-order:hover {
+  color: yellow;
+ border-color: white;
+}
+
+.no-padding {
+    padding:0;
+}
+
+.red-heading {
+    text-transform: uppercasee;
+    margin: 15px 20px;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(196, 39, 39);
+}
+
+.bg-golden {
+    background-color: rgb(145, 110, 21);
+}
+
+
+.textbox {
+    width:80%;
+    padding: 40x 40px;
+    margin: 0 auto;
+}
+
+.txtintro {
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+
+/* mobile */
+@media only screen and (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .btn-order {
+        display: none;
+    }
+
+    .logo img {
+        width: 196px;
+    }
+
+    .hero .overlay {
+        position: relative;
+        height: 100%;
+        padding-top: 10px;
+    }
+
+
+    footer {
+        text-align: center;
+    }
+
+    footer i {
+        margin: 10px 20px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+.hero .overlay  {
+  top:0;
+}
+}
