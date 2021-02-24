@@ -95,10 +95,10 @@ h5 {
 #hero .tirelogo {
   height: 55px;
   width: 240px;
+  padding-bottom: 10px;
 }
 
 #hero .tire-img {
-  padding: 20px 10px;
   border-radius: 20px;
 }
 
